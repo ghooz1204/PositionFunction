@@ -1,0 +1,86 @@
+.Controller {
+    display: flex;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 2px 15px #959595;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all;
+    padding-bottom: 100px;
+}
+.Controller-Sliding {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    width: 100px; line-height: 100px;
+    top: -100px; right: 100px;
+    box-shadow: 0px -5px 10px #959595;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+}
+
+.Controller-Preset {
+    padding: 10px;
+}
+.Controller-Preset-Element {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #BBDEFB;
+    border: 2px solid #99BCD9;
+}
+
+.Controller-Table {
+    text-align: center;
+    position: relative;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.Controller-Table-Header {
+    background-color: #BBDEFB;
+    height: 60px;
+}
+.Controller-Table-Body {
+    border: 0.25px solid #707070;
+    position: relative;
+    height: 40px;
+    width: 160px;
+}
+.Controller-Table-Image {
+    display: block;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; height: 100%;
+}
+.Controller-Table-Add {
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;   
+}
+
+.Controller-Table-Addition {
+    width: 15px;
+    transition: all 0.5s;
+}
+
+.Controller-Table-Add:hover > .Controller-Table-Addition { width: 30px; padding: 10px; }
+.Controller-Table-Body:hover > .Controller-Table-Delete {display:inline;}
+.Controller-Table-Update {
+    position: absolute;
+    /* left: 50%; transform:translateX(-50%); */
+    left:0; right:0; margin: auto;
+    width: 90%;
+}
+.Controller-Table-Delete {
+    position: absolute;
+    display: none;
+    right: 5px;
+    top: 5px;
+    border-radius: 30%;
+}

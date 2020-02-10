@@ -1,0 +1,11 @@
+.App-header {
+  box-shadow: 0px 2px 8px #959595;
+  background-color: white;
+  font-size: 26px;
+  line-height: 60px;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+}
+.App-header *{ vertical-align: middle; }
+.App-logo-img { padding-left: 50px; width: 34px; height: 34px; }
